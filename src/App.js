@@ -22,10 +22,10 @@ export default function App() {
     api.get('repositories').then(response => {
         setRepositories(response.data);
     });
-  }, [repositories]);
+  }, []);
 
   async function handleAddRepository() {
-    if (newTech) {
+    // if (newTech) {
       const response = await api.post('repositories', {
         url: "new-list",
         title: newTech,
@@ -41,18 +41,19 @@ export default function App() {
   
       setRepositories([...repositories, repository]);
       setNewTech('');
-    } else {
-      Alert.alert('Erro','Adicione um titulo!');
-    }
+    // } else {
+    //   Alert.alert('Erro','Adicione um titulo!');
+    // }
   }
 
 
   async function handleLikeRepository(id) {
     const response = await api.post(`repositories/${id}/like`);
-    const repositoryIndex = repositories.findIndex(repository => id == repository.id);
-    
-    let newRepositories = repositories;
-    newRepositories[repositoryIndex] = response.data;
+
+    const newRepositories = repositories.map((repository) =>
+      repository.id !== id ? repository : response.data
+    );
+
     setRepositories(newRepositories);
   }
 
@@ -113,9 +114,9 @@ export default function App() {
                   style={styles.likeText}
                   testID={`repository-likes-${repository.id}`}
                 >
-                  ${repository.likes} curtidas
+                  {repository.likes} curtidas
                 </Text>
-                  <TouchableOpacity
+                <TouchableOpacity
                   style={styles.button}
                   onPress={() => handleLikeRepository(repository.id)}
                   testID={`like-button-${repository.id}`}
@@ -123,6 +124,12 @@ export default function App() {
                   <Text style={styles.buttonText}>Curtir</Text>
                 </TouchableOpacity>
               </View>
+                <TouchableOpacity
+                  style={styles.button}
+                  onPress={() => handleRemoveRepository(repository.id)}
+                >
+                  <Text style={styles.buttonText}>Remover</Text>
+                </TouchableOpacity>
             </View>
           )}
         />  
