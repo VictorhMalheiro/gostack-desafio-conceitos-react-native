@@ -1,0 +1,447 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200730.180039.11912.0.001.json",
+    "dumpEventTime": "2020-07-30T18:00:39Z",
+    "dumpEventTimeStamp": "1596142839665",
+    "processId": 11912,
+    "cwd": "C:\\Users\\Victor Malheiro\\Documents\\Projetos\\GoStackNew\\conceitos-react-native\\gostack-desafio-conceitos-react-native",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Victor Malheiro\\Documents\\Projetos\\GoStackNew\\conceitos-react-native\\gostack-desafio-conceitos-react-native\\node_modules\\.bin\\\\..\\jest\\bin\\jest.js"
+    ],
+    "nodejsVersion": "v12.14.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.14.1",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.14.1/node-v12.14.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.14.1/node-v12.14.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.14.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Home Single Language",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 33174578,
+        "nice": 0,
+        "sys": 15310593,
+        "idle": 88415640,
+        "irq": 1533015
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 31607296,
+        "nice": 0,
+        "sys": 11394218,
+        "idle": 93899062,
+        "irq": 227093
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 37153687,
+        "nice": 0,
+        "sys": 11649953,
+        "idle": 88096937,
+        "irq": 197046
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 37741843,
+        "nice": 0,
+        "sys": 10622218,
+        "idle": 88536515,
+        "irq": 152046
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "5c:c9:d3:24:03:45",
+        "address": "fe80::a0b9:5211:d567:c7a0",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 15
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "5c:c9:d3:24:03:45",
+        "address": "192.168.0.107",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "DESKTOP-VMSI310"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff72f0b1759",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff72f0b5b7c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
+    },
+    {
+      "pc": "0x00007ff72f0b4b38",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
+    },
+    {
+      "pc": "0x00007ff72f1a433b",
+      "symbol": "v8::base::CPU::has_sse+37723"
+    },
+    {
+      "pc": "0x00007ff72f9a8c5e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff72f990ca1",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff72f85e56c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff72f869910",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff72f866444",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff72f85bcd3",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff72f85a4a4",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2356"
+    },
+    {
+      "pc": "0x00007ff72f87b775",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
+    },
+    {
+      "pc": "0x00007ff72f5e7a49",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+4057"
+    },
+    {
+      "pc": "0x00007ff72fdd463d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+567949"
+    },
+    {
+      "pc": "0x00007ff72fdd5571",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+571841"
+    },
+    {
+      "pc": "0x0000033e55bd4986",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2167132160,
+    "totalCommittedMemory": 2167132160,
+    "usedMemory": 2088558568,
+    "availableMemory": 67325088,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16759808,
+        "used": 277464,
+        "available": 16482344
+      },
+      "old_space": {
+        "memorySize": 1636937728,
+        "committedMemory": 1636937728,
+        "capacity": 1596711568,
+        "used": 1593541344,
+        "available": 3170224
+      },
+      "code_space": {
+        "memorySize": 1998848,
+        "committedMemory": 1998848,
+        "capacity": 1578272,
+        "used": 1578272,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 2625536,
+        "committedMemory": 2625536,
+        "capacity": 1454560,
+        "used": 1454560,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 491704320,
+        "committedMemory": 491704320,
+        "capacity": 491671080,
+        "used": 491671080,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16759808,
+        "used": 0,
+        "available": 16759808
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 1074.52,
+    "kernelCpuSeconds": 12.296,
+    "cpuConsumptionPercent": 120.489,
+    "maxRss": 2376478720,
+    "pageFaults": {
+      "IORequired": 1379219,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 4668,
+      "writes": 16
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\Users\\Victor Malheiro\\Documents\\Projetos\\GoStackNew\\conceitos-react-native\\gostack-desafio-conceitos-react-native",
+    "ACLOCAL_PATH": "/mingw64/share/aclocal:/usr/share/aclocal",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ANDROID_HOME": "C:\\Program Files (x86)\\Android\\android-sdk",
+    "APPDATA": "C:\\Users\\Victor Malheiro\\AppData\\Roaming",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132398303954954253",
+    "CLASSPATH": ".;",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-VMSI310",
+    "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+    "CONFIG_SITE": "/mingw64/etc/config.site",
+    "DISPLAY": "needs-to-be-defined",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EXEPATH": "C:\\Program Files\\Git",
+    "HOME": "C:\\Users\\Victor Malheiro",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Victor Malheiro",
+    "HOSTNAME": "DESKTOP-VMSI310",
+    "INFOPATH": "/usr/local/info:/usr/share/info:/usr/info:/share/info",
+    "INIT_CWD": "C:\\Users\\Victor Malheiro\\Documents\\Projetos\\GoStackNew\\conceitos-react-native\\gostack-desafio-conceitos-react-native",
+    "JAVA_HOME": "C:\\Program Files (x86)\\Java\\jdk1.8.0_261",
+    "JEST_WORKER_ID": "1",
+    "JRE_HOME": "C:\\Program Files (x86)\\Java\\jre1.8.0_261",
+    "LANG": "pt_BR.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\Victor Malheiro\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-VMSI310",
+    "MANPATH": "/mingw64/local/man:/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man",
+    "MINGW_CHOST": "x86_64-w64-mingw32",
+    "MINGW_PACKAGE_PREFIX": "mingw-w64-x86_64",
+    "MINGW_PREFIX": "/mingw64",
+    "MSYSTEM": "MINGW64",
+    "MSYSTEM_CARCH": "x86_64",
+    "MSYSTEM_CHOST": "x86_64-w64-mingw32",
+    "MSYSTEM_PREFIX": "/mingw64",
+    "NODE": "C:\\Program Files\\nodejs\\node.exe",
+    "NODE_ENV": "test",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"test\"],\"original\":[\"test\"]}",
+    "npm_config_bin_links": "true",
+    "npm_config_ignore_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_license": "MIT",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_config_save_prefix": "^",
+    "npm_config_strict_ssl": "true",
+    "npm_config_user_agent": "yarn/1.21.1 npm/? node/v12.14.1 win32 x64",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_version_git_message": "v%s",
+    "npm_config_version_git_sign": "",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_tag_prefix": "v",
+    "npm_execpath": "C:\\Program Files (x86)\\Yarn\\bin\\yarn.js",
+    "npm_lifecycle_event": "test",
+    "npm_lifecycle_script": "jest",
+    "npm_node_execpath": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_package_dependencies_axios": "^0.19.2",
+    "npm_package_dependencies_axios_mock_adapter": "^1.18.1",
+    "npm_package_dependencies_react": "16.11.0",
+    "npm_package_dependencies_react_native": "0.62.1",
+    "npm_package_dependencies__testing_library_jest_native": "^3.1.0",
+    "npm_package_dependencies__types_jest": "^25.2.1",
+    "npm_package_devDependencies_babel_jest": "^25.2.6",
+    "npm_package_devDependencies_eslint": "^6.8.0",
+    "npm_package_devDependencies_jest": "^25.2.7",
+    "npm_package_devDependencies_metro_react_native_babel_preset": "^0.59.0",
+    "npm_package_devDependencies_react_test_renderer": "16.11.0",
+    "npm_package_devDependencies__babel_core": "^7.9.0",
+    "npm_package_devDependencies__babel_plugin_proposal_class_properties": "^7.8.3",
+    "npm_package_devDependencies__babel_plugin_transform_flow_strip_types": "^7.9.0",
+    "npm_package_devDependencies__babel_runtime": "^7.9.2",
+    "npm_package_devDependencies__react_native_community_eslint_config": "^1.0.0",
+    "npm_package_devDependencies__testing_library_react_native": "^5.0.3",
+    "npm_package_name": "mobile",
+    "npm_package_private": "true",
+    "npm_package_scripts_android": "react-native run-android",
+    "npm_package_scripts_ios": "react-native run-ios",
+    "npm_package_scripts_lint": "eslint .",
+    "npm_package_scripts_start": "react-native start",
+    "npm_package_scripts_test": "jest",
+    "npm_package_version": "0.0.1",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OneDrive": "C:\\Users\\Victor Malheiro\\OneDrive",
+    "ORIGINAL_PATH": "C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Victor Malheiro\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files (x86)\\Yarn\\bin;C:\\Program Files\\nodejs;C:\\Program Files\\dotnet;C:\\Program Files (x86)\\Android\\android-sdk\\emulator;C:\\Program Files (x86)\\Android\\android-sdk\\tools;C:\\Program Files (x86)\\Android\\android-sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\android-sdk\\platform-tools;C:\\Users\\Victor Malheiro\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Victor Malheiro\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Victor Malheiro\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files (x86)\\Android\\android-sdk\\platform-tools;C:\\Program Files (x86)\\Android\\android-sdk\\tools;C:\\Program Files\\Java\\jdk1.8.0_221;C:\\Users\\Victor Malheiro\\AppData\\Local\\hyper\\app-3.0.2\\resources\\bin;C:\\Users\\Victor Malheiro\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Victor Malheiro\\AppData\\Local\\Yarn\\bin;C:\\Users\\Victor Malheiro\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Java\\jdk1.8.0_261\\bin",
+    "ORIGINAL_TEMP": "/tmp",
+    "ORIGINAL_TMP": "/tmp",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Users\\VICTOR~1\\AppData\\Local\\Temp\\yarn--1596141937290-0.6406113978700818;C:\\Users\\Victor Malheiro\\Documents\\Projetos\\GoStackNew\\conceitos-react-native\\gostack-desafio-conceitos-react-native\\node_modules\\.bin;C:\\Users\\Victor Malheiro\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\Program Files\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Users\\Victor Malheiro\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Victor Malheiro\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Program Files (x86)\\Yarn\\bin;C:\\Program Files\\nodejs;C:\\Program Files\\dotnet;C:\\Program Files (x86)\\Android\\android-sdk\\emulator;C:\\Program Files (x86)\\Android\\android-sdk\\tools;C:\\Program Files (x86)\\Android\\android-sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\android-sdk\\platform-tools;C:\\Users\\Victor Malheiro\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Victor Malheiro\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Victor Malheiro\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files (x86)\\Android\\android-sdk\\platform-tools;C:\\Program Files (x86)\\Android\\android-sdk\\tools;C:\\Program Files\\Java\\jdk1.8.0_221;C:\\Users\\Victor Malheiro\\AppData\\Local\\hyper\\app-3.0.2\\resources\\bin;C:\\Users\\Victor Malheiro\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Victor Malheiro\\AppData\\Local\\Yarn\\bin;C:\\Users\\Victor Malheiro\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PKG_CONFIG_PATH": "/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 42 Stepping 7, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "2a07",
+    "ProgramData": "C:\\ProgramData",
+    "PROGRAMFILES": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "prompt": "$E[1;32;40m→ $E[1;36;40m$p$E[1;35;40m› $E[1;37;40m",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "/c/Users/Victor Malheiro/Documents/Projetos/GoStackNew/conceitos-react-native/gostack-desafio-conceitos-react-native",
+    "SESSIONNAME": "Console",
+    "SHELL": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+    "SHLVL": "2",
+    "SSH_ASKPASS": "/mingw64/libexec/git-core/git-gui--askpass",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\Windows",
+    "TEMP": "C:\\Users\\VICTOR~1\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\VICTOR~1\\AppData\\Local\\Temp",
+    "TMPDIR": "C:\\Users\\VICTOR~1\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-VMSI310",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-VMSI310",
+    "USERNAME": "Victor Malheiro",
+    "USERPROFILE": "C:\\Users\\Victor Malheiro",
+    "WINDIR": "C:\\Windows",
+    "YARN_WRAP_OUTPUT": "false",
+    "_": "/usr/bin/winpty"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\MSASN1.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\System32\\bcrypt.dll",
+    "C:\\Windows\\System32\\profapi.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\Windows\\System32\\cfgmgr32.dll",
+    "C:\\Windows\\System32\\bcryptPrimitives.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\System32\\powrprof.dll",
+    "C:\\Windows\\System32\\UMPDC.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\kernel.appcore.dll",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\wshbth.dll"
+  ]
+}
